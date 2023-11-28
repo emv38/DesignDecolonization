@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'TheGaneshaFont';
-    src: url('fonts/Theganesha-V5OB.ttf') format('truetype');
+    src: url('/fonts/Theganesha-V5OB.ttf') format('truetype');
 }
 
 html {
