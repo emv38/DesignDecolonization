@@ -15,7 +15,9 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 10px; /* Optional margin for spacing */
+    margin: 30px;
+    background-color: antiquewhite;
+    border-color: transparent;
 }
 
 section {
@@ -27,15 +29,18 @@ section {
 }
 
 section h1 {
-    font-family: 'TheGaneshaFont', sans-serif;
+    font-family: 'Kumar One', serif;
     font-size: 5vw;
 }
 
 .start-content {
     display: flex;
+    flex-direction: column;
     padding: 5%;
 }
 
 .start-content p {
     font-size: large;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
 }
