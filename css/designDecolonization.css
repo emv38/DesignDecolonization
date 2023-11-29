@@ -133,3 +133,19 @@ section h1 {
     padding: 20px; 
     box-sizing: border-box;
 }
+
+.tamil-image-container img {
+    width: 525px;
+    height: 346px;
+}
+
+.tamil-image-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.info-container {
+    background-color: #460b2f;
+    padding: 2%;
+    color: white;
+}
