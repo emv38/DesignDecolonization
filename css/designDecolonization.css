@@ -11,6 +11,32 @@ body {
     margin: 0;
 }
 
+header {
+    position: sticky;
+    top:0 ;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.progress-bar-inner {
+    position: relative;
+    width: 0%;
+    padding: 0px;
+    background-color: #460b2f;
+    color: white;
+    z-index: 1;
+}
+
 .next-button {
     position: absolute;
     bottom: 0;
@@ -21,14 +47,17 @@ body {
 .next-button button {
     border-color: transparent;
     border-radius: 50px;
-    background-color: antiquewhite;
+    background-color: black;
     padding: 15px 20px;
     cursor: pointer;
     transition: all 0.3s;
+    color: white;
 }
 
 .next-button button:hover {
-    border-color: #460b2f;
+    transform: scale(1.1);
+    letter-spacing: .15rem;
+    box-shadow: 0 0 20px #460b2f;
 }
 
 section {
@@ -36,7 +65,12 @@ section {
     display: flex;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle at -4% 92%, rgba(154,3,30,0.63), rgba(90,17,18,0)), radial-gradient(circle at 81% 102%, rgba(251,139,36,1), rgba(150,100,100,0)), linear-gradient(311deg, rgba(227,100,20,1), rgba(255,255,0,0));
+    filter: contrast(180%) brightness(350%);
+    background: 
+      linear-gradient(214deg, rgba(154,3,30,0.65), rgba(90,17,18,0)),
+      radial-gradient(circle at -50% -50%, rgba(251,139,36,1), rgba(150,100,100,0)),
+      radial-gradient(circle at 39% 150%, rgba(227,100,20,1), rgba(255,255,0,0)),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 269 269' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='10' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 section h1 {
@@ -66,16 +100,24 @@ section h1 {
 }
 
 #India1 p {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Mina', sans-serif;
     font-weight: 500;
 }
 
 #India1 .left-container {
-    display: flex;
-    flex-direction: column;
+    flex: 1; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-#India1 .right-container{
-    width: 50%;
+#India1 .map-container {
+    position: relative;
+    width: 100%; 
+}
+
+#India1 .right-container {
+    flex: 1; 
+    padding: 20px; 
+    box-sizing: border-box;
 }

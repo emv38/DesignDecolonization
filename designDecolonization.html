@@ -12,6 +12,11 @@
 
 </head>
 <body>
+    <header>
+        <div class="progress-bar">
+            <div class="progress-bar-inner">0%</div>
+        </div>
+    </header>
     <section id ="start">
         <div class="start-content">
             <h1>Design Decolonization</h1>
@@ -26,20 +31,36 @@
             <h1>India at a Glance</h1>
             <p>Let's start with looking at some traditional from different area's of India. India is home to a diverse array of culture and art, so this is the tip of the iceberg at best. Click on the circles you notice in the image to learn more about an areas traditional art!</p>
             <div class="map-container">
-                <img src="/img/india_outline.png" usemap="#image-map">
+                <img src="img/india_outline.png" usemap="#image-map">
 
                 <map name="image-map">
                     <area alt="Tamil Nadu" title="Tamil Nadu" href="javascript:void(0)" onclick="showContainer('tamil-nadu-container')" coords="246,363,25" shape="circle">
-                    <area alt="Bengal" title="Bengal" href="javascript:void(0)" onclick="showInfo('Bengal', 'image_bengal.jpg')" coords="367,213,22" shape="circle">
-                    <area alt="Madya Pradesh" title="Madya Pradesh" href="javascript:void(0)" onclick="showContainer('tamil-nadu-container')" coords="247,198,21" shape="circle">
-                    <area alt="Rajasthan" title="Rajasthan" href="javascript:void(0)" onclick="showContainer('tamil-nadu-container')" coords="173,162,17" shape="circle">
+                    <area alt="Bengal" title="Bengal" href="javascript:void(0)" onclick="showContainer('bengal-container')" coords="367,213,22" shape="circle">
+                    <area alt="Madya Pradesh" title="Madya Pradesh" href="javascript:void(0)" onclick="showContainer('madya-pradesh-container')" coords="247,198,21" shape="circle">
+                    <area alt="Rajasthan" title="Rajasthan" href="javascript:void(0)" onclick="showContainer('rajasthan-container')" coords="173,162,17" shape="circle">
                 </map>
             </div>
         </div>
         <div class="right-container">
             <!--insert the informational content here-->
-            <div class="tamil-nadu-container">
-                <img src="/img/tamil_nadu.jpg" alt="a traditional Keral Mural that depicts a religious event">
+            <div id="tamil-nadu-container" class="info-container">
+                <h2>Tamil Nadu</h2>
+                <p>Information about Tamil Nadu...</p>
+            </div>
+            
+            <div id="bengal-container" class="info-container">
+                <h2>Bengal</h2>
+                <p>Information about Bengal...</p>
+            </div>
+            
+            <div id="madya-pradesh-container" class="info-container">
+                <h2>Madya Pradesh</h2>
+                <p>Information about Madya Pradesh...</p>
+            </div>
+            
+            <div id="rajasthan-container" class="info-container">
+                <h2>Rajasthan</h2>
+                <p>Information about Rajasthan...</p>
             </div>
         </div>
         
@@ -76,5 +97,7 @@
         <h1>slide Title</h1>
         <p>Omnis, optio. Eius neque, recusandae excepturi molestias reprehenderit laborum nemo a reiciendis aperiam pariatur beatae laboriosam aspernatur, voluptatibus vero repudiandae accusantium dolor aliquid architecto exercitationem voluptate natus. Architecto, dolore impedit.</p>
     </section>
+
+    <script src="js/imagemap.js"></script>
 </body>
 </html>
