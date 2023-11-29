@@ -16,8 +16,19 @@ body {
     bottom: 0;
     right: 0;
     margin: 30px;
-    background-color: antiquewhite;
+}
+
+.next-button button {
     border-color: transparent;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.next-button button:hover {
+    border-color: #460b2f;
 }
 
 section {
@@ -31,6 +42,7 @@ section {
 section h1 {
     font-family: 'Kumar One', serif;
     font-size: 5vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .start-content {
@@ -40,7 +52,30 @@ section h1 {
 }
 
 .start-content p {
-    font-size: large;
+    font-size: 30px;
     font-family: 'Mina', sans-serif;
     font-weight: 500;
+}
+
+#India1 {
+    display: flex;
+}
+
+#India1 h1 {
+    font-size: 3vw;
+}
+
+#India1 p {
+    font-size: 30px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+}
+
+#India1 .left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#India1 .right-container{
+    width: 50%;
 }
