@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function showContainer(containerId) {
-    console.log('Clicked on area. Showing container:', containerId);
+    //console.log('Clicked on area. Showing container:', containerId);
     // Hide all info containers
     const containers = document.querySelectorAll('.info-container');
     containers.forEach(container => container.style.display = 'none');
