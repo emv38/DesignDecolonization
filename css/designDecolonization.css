@@ -10,7 +10,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-   
 
 }
 
@@ -76,7 +75,13 @@ header {
     margin: 30px;
 }
 
-.next-button button {
+.button-container {
+    margin: auto;
+    margin-top: 50%;
+}
+
+.next-button button,
+.button-container button {
     border-color: transparent;
     border-radius: 50px;
     background-color: black;
@@ -95,8 +100,8 @@ header {
 section {
     height: 100vh;
     display: flex;
+    padding: 5%;
     align-items: center;
-    text-align: center;
     /**    filter: contrast(370%) brightness(100%);
     background: 
     linear-gradient(183deg, rgba(251,139,36,1), rgba(150,100,100,0)),
@@ -106,20 +111,44 @@ section {
 
 section h1 {
     font-family: 'Kumar One', serif;
-    font-size: 5vw;
+    font-size: 4vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.start-content {
+.start-content,
+.intro-content {
     display: flex;
-    flex-direction: column;
-    padding: 5%;
 }
 
-.start-content p {
+.welcome-message {
     font-size: 30px;
     font-family: 'Mina', sans-serif;
     font-weight: 500;
+}
+
+.start-left {
+    flex: 1;
+}
+
+.start-right {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.what-is-DD {
+    font-size: 50px;
+}
+
+#introduction p {
+    font-family: 'Mina', sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+}
+
+#introduction .start-right {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
 }
 
 #India1 {
@@ -153,18 +182,65 @@ section h1 {
     box-sizing: border-box;
 }
 
-.tamil-image-container img {
-    width: 525px;
-    height: 346px;
-}
-
-.tamil-image-container {
-    display: flex;
+.image-container img {
+    width: 550px;
+    height: 350px;
     overflow: hidden;
 }
 
-.info-container {
-    background-color: #460b2f;
-    padding: 2%;
-    color: white;
+.image-container {
+    display: flex;
+    justify-content: center;
 }
+
+.info-container {
+    padding: 2%;
+    color: black;
+    border: #460b2f solid 2px;
+}
+
+.info-container h2 {
+    color: white;
+    margin-left: 1%;
+    font-size: 40px;
+    display: inline;
+    padding: 2%;
+    background-color: #460b2f;
+}
+
+.colonial-content {
+    display: flex;
+}
+
+.colonial-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.colonial-left p {
+    font-size: 25px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+}
+
+.colonial-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.colonial-image-container {
+    background-color: white;
+    width: 700px;
+    height: 200px;
+    margin: 2%;
+    overflow: hidden;
+}
+
+.colonial-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+

@@ -19,12 +19,35 @@
     </header>
     <section id ="start">
         <div class="start-content">
-            <h1>Design Decolonization</h1>
-            <p>Welcome to Design Decolonization! This website is an interactive space where we will go through the connections between design and colonialism in India. This site is meant to be a low-stress informational module for those interested in learning more about the intersectionality between these two areas. Once you are done with a page, you can click the next button at the bottom right corner to proceed to the next slide. </p>
+            <div class="start-left">
+                <h1>Design Decolonization</h1>
+                <p class="welcome-message">Welcome to Design Decolonization! This website is an interactive space where we will go through the connections between design and colonialism in India. This site will explore the intersectionality between Design and culture, and the importance of culture-sensitive Design</p>
+            </div>
+            <div class="start-right">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.516/build/spline-viewer.js"></script>
+                <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/nIcByF4j9hHLYG7n/scene.splinecode"></spline-viewer>
+            </div>
         </div>
-        <a href="#India1" id="intro-next" class="next-button">
-            <button>Continue</button>
+        <a href="#introduction" id="intro-next" class="next-button">
+            <button>Start</button>
         </a>
+    </section>
+    <section id ="introduction">
+        <div class="intro-content">
+            <div class="start-left reveal">
+                <h1 class="what-is-DD">So, what is Design Decolonization?</h1>
+            </div>
+            <div class="start-right reveal">
+                <p>Design Decolonization takes into account the ties between historical desgin trends and Eurocentric/Anglocentric perspectives. Through this perspective, there is little consideration for marginalized groups and that is reflected in these practices. This is especially harmful, as it can lead to unsustainable design theory and can isolate groups that can otherwise benefit from culture-specific design. </br>
+                Specifically, lets look at a country with years of colonialism in its history: India. </br>
+                Understanding the effects of colonialism is the first step to becoming aware of the effects of eurocentric design practices on non-european countries.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="#India1">
+                <button>Start</button>
+            </a>
+        </div>
     </section>
     <section id ="India1">
         <div class="left-container reveal">
@@ -44,33 +67,73 @@
         <div class="right-container">
             <!--insert the informational content here-->
             <div id="tamil-nadu-container" class="info-container">
-                <div class="tamil-image-container">
-                    <h2>Tamil Nadu</h2>
+                <div class="image-container">
                     <img src="img/tamil_nadu.jpg" class="tamil-nadu-img">
+                    <h2>Tamil Nadu</h2>
                 </div>
-                <p>Information about Tamil Nadu...</p>
+                <p>These are murals from the Thirunandikkara Cave in Tamil Nadu. They are considered the oldest relics of Kerala's own style of murals. They are meant to represent early examples of Kerala style which heavily resembled Buddhist tradition at the time. Many depict religious and spiritual stories that are passed down through generations. Natural color sources such as vegetables were used to achieve a more colorful effect. </p>
             </div>
             
             <div id="bengal-container" class="info-container">
-                <h2>Bengal</h2>
-                <p>Information about Bengal...</p>
+                <div class="image-container">
+                    <img src="img/bengal.jpg" class="bengal-img">
+                    <h2>Bengal</h2>
+                </div>
+                <p>These are murals from the Thirunandikkara Cave in Tamil Nadu. They are considered the oldest relics of Kerala's own style of murals. They are meant to represent early examples of Kerala style which heavily resembled Buddhist tradition at the time. Many depict religious and spiritual stories that are passed down through generations. Natural color sources such as vegetables were used to achieve a more colorful effect. </p>
             </div>
             
             <div id="madya-pradesh-container" class="info-container">
-                <h2>Madya Pradesh</h2>
-                <p>Information about Madya Pradesh...</p>
+                <div class="image-container">
+                    <img src="img/madya_pradesh.jpg" class="madya-img">
+                    <h2>Madya Pradesh</h2>
+                </div>
+                <p>These are murals from the Thirunandikkara Cave in Tamil Nadu. They are considered the oldest relics of Kerala's own style of murals. They are meant to represent early examples of Kerala style which heavily resembled Buddhist tradition at the time. Many depict religious and spiritual stories that are passed down through generations. Natural color sources such as vegetables were used to achieve a more colorful effect. </p>
             </div>
             
             <div id="rajasthan-container" class="info-container">
-                <h2>Rajasthan</h2>
-                <p>Information about Rajasthan...</p>
+                <div class="image-container">
+                    <img src="img/rajastan.jpg" class="rajasthan-img">
+                    <h2>Rajasthan</h2>
+                </div>
+                <p>These are murals from the Thirunandikkara Cave in Tamil Nadu. They are considered the oldest relics of Kerala's own style of murals. They are meant to represent early examples of Kerala style which heavily resembled Buddhist tradition at the time. Many depict religious and spiritual stories that are passed down through generations. Natural color sources such as vegetables were used to achieve a more colorful effect. </p>
             </div>
         </div>
         
     </section>
-    <section id ="India2">
-        <h1>slide Title</h1>
-        <p>Id libero, officia minima ad iste odio beatae, distinctio, nam consectetur voluptatum reprehenderit unde. Illum ex repellat laudantium ea aut suscipit laboriosam maiores sint totam, eos numquam accusamus tempora reprehenderit.</p>
+    <section id ="Colonialism">
+        <div class="colonial-content reveal">
+            <div class="colonial-left">
+                <h1>Colonial Powers</h1>
+                <p>To get a better understanding of how these design practices develop, we need to look into the different colonial powers during this time. There were three main colonial powers that left the most impact on Indian life, art, and culture. Hover on the image to find out and click on the images to learn more.</p>
+            </div>
+            <div class="colonial-right reveal">
+                <!--three colonial powers-->
+                <div class="colonial-image-container">
+                    <!--colonial image and overlay here-->
+                    <img src="img/britishIndia.png" class="colonial-image">
+                    <div class="overlay">
+
+                    </div>
+                </div>
+
+                <div class="colonial-image-container">
+                    <!--colonial image and overlay here-->
+                    <img src="img/frenchIndia.png" class="colonial-image">
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+
+                <div class="colonial-image-container">
+                    <!--colonial image and overlay here-->
+                    <img src="img/portugueseIndia.png" class="colonial-image">
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     <section>
         <h1>slide Title</h1>
