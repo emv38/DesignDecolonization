@@ -98,7 +98,7 @@ header {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     padding: 5%;
     align-items: center;
@@ -289,6 +289,7 @@ section h1 {
 
 .postcolonial-header {
     display: flex;
+    align-items: center;
 }
 
 .postcolonial-header h1 {
@@ -319,7 +320,7 @@ section h1 {
 
 .postcolonial-image-container {
     display: flex;
-    overflow: hidden;
+    
     transition: transform 0.5s ease;
     margin-bottom: 2%;
 }
@@ -372,6 +373,50 @@ section h1 {
     font-family: 'Mina', sans-serif;
     font-weight: 500;
     box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
+}
+
+/*  India Centric Design section */
+
+.indiacentric-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.indiacentric-header {
+    display: flex;
+    align-items: center;
+}
+
+.indiacentric-header p {
+    font-size: 21px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+}
+
+.circles {
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-container {
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
+}
+
+.leftCircle {
+    align-self: flex-start;
+}
+
+.circle-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
