@@ -21,10 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Hide all info containers when the page loads
     const containers = document.querySelectorAll('.info-container');
     containers.forEach(container => container.style.display = 'none');
+
+    //hide all the design container
+    //const designContainers = document.querySelectorAll('.design-container');
+    //designContainers.forEach(container => container.style.display = 'none');
 });
 
 function showContainer(containerId) {
     //console.log('Clicked on area. Showing container:', containerId);
+
     // Hide all info containers
     const containers = document.querySelectorAll('.info-container');
     containers.forEach(container => container.style.display = 'none');
@@ -32,6 +37,23 @@ function showContainer(containerId) {
     // Show the specific info container
     const selectedContainer = document.getElementById(containerId);
     selectedContainer.style.display = 'block';
+
+}
+
+function showAnswer(containerId) {
+
+    //hide all the design container
+    const designContainers = document.querySelectorAll('.design-container');
+    //designContainers.forEach(container => container.style.display = 'none');
+    designContainers.forEach(container => {
+        container.classList.remove('active');
+    });
+
+    //show the specific design container
+    const selectedContainer = document.getElementById(containerId);
+    selectedContainer.classList.add('active');
+    //selectedContainer.style.display = 'block';
+
 }
 
 window.addEventListener('scroll', reveal);

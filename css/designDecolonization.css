@@ -3,6 +3,10 @@
     src: url('/fonts/Theganesha-V5OB.ttf') format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,7 +14,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-
+    overflow-x: hidden;
 }
 
 body::after {
@@ -282,6 +286,8 @@ section h1 {
     filter: grayscale(100%);
 }
 
+/* post colonial content starts here */
+
 .postcolonial-content {
     display: flex;
     flex-direction: column;
@@ -309,7 +315,7 @@ section h1 {
     width: 392px;
     height: 300px;
     overflow: hidden;
-    transition: transform 0.5s ease;
+    transition: transform 2s ease;
 }
 
 .postcolonial-image img {
@@ -318,10 +324,13 @@ section h1 {
     object-fit: cover;
 }
 
+.rightalign {
+    justify-content: right;
+}
+
 .postcolonial-image-container {
     display: flex;
-    
-    transition: transform 0.5s ease;
+    transition: transform 2s ease;
     margin-bottom: 2%;
 }
 
@@ -330,7 +339,7 @@ section h1 {
     height: 225px;
     width: 800px;
     transform: translateX(100%); 
-    transition: transform 0.5s ease;
+    transition: transform 2s ease;
     opacity: 0;
 }
 
@@ -357,7 +366,7 @@ section h1 {
     height: 225px;
     width: 800px;
     transform: translateX(-100%); 
-    transition: transform 0.5s ease;
+    transition: transform 2s ease;
     opacity: 0;
 }
 
@@ -376,7 +385,6 @@ section h1 {
 }
 
 /*  India Centric Design section */
-
 .indiacentric-content {
     display: flex;
     flex-direction: column;
@@ -393,6 +401,10 @@ section h1 {
     font-weight: 500;
 }
 
+.indiacentric-clickcontent {
+    display: flex;
+}
+
 .circles {
     flex: 1;
     width: 50%;
@@ -402,11 +414,16 @@ section h1 {
 }
 
 .circle-container {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
+}
+
+.circle-container:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.3s ease;
 }
 
 .leftCircle {
@@ -420,6 +437,74 @@ section h1 {
 }
 
 
+.circle-rightanswer {
+    flex: 1;
+    width: 50%;
+    position: relative;
+}
 
+.design-container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
+    transform: scale(0.8); /* Initial scale to 80% */
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.design-container.active {
+    transform: scale(1); /* Final scale to 100% */
+    opacity: 1;
+}
+
+.design-container p {
+    font-size: 21px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+    padding: 2%;
+}
+
+.image-carousel-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image-carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* End slide */
+
+#end-slide p {
+    font-size: 25px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 600;
+}
+
+/* transition page */
+
+.staticpage-button button{
+    background-color: black;
+    padding: 3%;
+    border-color: transparent;
+    color: white;
+    font-size: 21px;
+    border-radius: 50px;
+    transition: all 0.7s ease;
+}
+
+.staticpage-button button:hover {
+    background-color: transparent;
+    border: 1px solid #460b2f;
+    color: black;
+    transform: scale(1.1);
+    letter-spacing: .15rem;
+    box-shadow: 0 0 20px #460b2f;
+}
 
 
