@@ -115,15 +115,30 @@ section h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.start-content,
 .intro-content {
     display: flex;
+}
+
+.start-content {
+    display: flex;
+}
+
+.start-left,
+.start-right {
+    flex: 1;
+    width: 50%;
 }
 
 .welcome-message {
     font-size: 30px;
     font-family: 'Mina', sans-serif;
     font-weight: 500;
+}
+
+.start-right p {
+    font-size: 20px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 600;
 }
 
 #India1 {
