@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'TheGaneshaFont';
+    src: url('/fonts/Theganesha-V5OB.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.resources-content {
+    padding: 2%;
+}
+
+
+body h2 {
+    font-family: 'Mina', sans-serif;
+    font-size: 3rem;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: 
+    linear-gradient(35deg, rgba(251,139,36,1), rgba(0,0,0,0)),
+	linear-gradient(196deg, rgba(227,100,20,1), rgba(255,0,255,0)),
+	linear-gradient(360deg, rgba(255,0,255,1), rgba(255,0,0,0)),
+	linear-gradient(244deg, rgba(255,0,0,1), rgba(0,255,255,0));
+    color: black;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+.header-title {
+    font-size: 1.5rem;
+    font-family: 'Kumar One', serif;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Mina', sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+h3 {
+    font-family: 'Mina', sans-serif;
+    font-size: 2rem;
+}
+
+body p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.resources-content a {
+    text-decoration: underline;
+    color: #460b2f;
+}
+
+
+
+.footer-wrapper {
+    background: 
+    linear-gradient(35deg, rgba(251,139,36,1), rgba(0,0,0,0)),
+	linear-gradient(196deg, rgba(227,100,20,1), rgba(255,0,255,0)),
+	linear-gradient(360deg, rgba(255,0,255,1), rgba(255,0,0,0)),
+	linear-gradient(244deg, rgba(255,0,0,1), rgba(0,255,255,0));
+}
