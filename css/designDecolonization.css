@@ -43,7 +43,7 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     z-index: 1;
 }
 
@@ -197,6 +197,7 @@ section h1 {
     padding: 2%;
     color: black;
     border: #460b2f solid 2px;
+    box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
 }
 
 .info-container h2 {
@@ -230,11 +231,14 @@ section h1 {
 }
 
 .colonial-image-container {
+    position: relative;
     background-color: white;
     width: 700px;
     height: 200px;
     margin: 2%;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 .colonial-image-container img {
@@ -242,5 +246,91 @@ section h1 {
     height: 100%;
     object-fit: cover;
 }
+/*.colonial-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.overlay {
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #460b2f;
+}
+
+.colonial-link a {
+    font-family: 'Mina', sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: 600; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.overlayLeft {
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+}
+
+.colonial-image-container:hover .overlayLeft {
+    width: 100%;
+    opacity: .7;
+}
+
+.colonial-image-container:hover {
+    filter: grayscale(100%);
+}
+
+.postcolonial-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.postcolonial-header {
+    display: flex;
+}
+
+.postcolonial-header h1 {
+    flex: 1;
+    width: 50%;
+}
+
+.postcolonial-header p {
+    flex: 1;
+    width: 50%;
+    font-size: 21px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+}
+
+.postcolonial-image {
+    width: 392px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.postcolonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.postcolonial-image-container {
+    display: flex;
+}
+
+
+
 
 
