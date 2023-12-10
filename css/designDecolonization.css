@@ -308,6 +308,7 @@ section h1 {
     width: 392px;
     height: 300px;
     overflow: hidden;
+    transition: transform 0.5s ease;
 }
 
 .postcolonial-image img {
@@ -318,6 +319,59 @@ section h1 {
 
 .postcolonial-image-container {
     display: flex;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    margin-bottom: 2%;
+}
+
+.postcolonial-text  {
+    align-self: baseline;
+    height: 225px;
+    width: 800px;
+    transform: translateX(100%); 
+    transition: transform 0.5s ease;
+    opacity: 0;
+}
+
+.postcolonial-image-container:hover .postcolonial-text {
+    transform: translateX(0); 
+    opacity: 1;
+}
+
+.postcolonial-image:hover {
+    transform: scale(1.1);
+}
+
+.postcolonial-text p {
+    margin-left: 3%;
+    padding: 2%;
+    font-size: 21px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
+}
+
+.postcolonial-text-right {
+    align-self: baseline;
+    height: 225px;
+    width: 800px;
+    transform: translateX(-100%); 
+    transition: transform 0.5s ease;
+    opacity: 0;
+}
+
+.postcolonial-image-container:hover .postcolonial-text-right {
+    transform: translateX(0); 
+    opacity: 1;
+}
+
+.postcolonial-text-right p {
+    margin-right: 3%;
+    padding: 2%;
+    font-size: 21px;
+    font-family: 'Mina', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
 }
 
 
