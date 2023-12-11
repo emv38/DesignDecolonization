@@ -448,7 +448,7 @@ section h1 {
     width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(70, 11, 47, 0.5);
-    transform: scale(0.8); /* Initial scale to 80% */
+    transform: scale(0.5); /* Initial scale to 80% */
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
@@ -465,16 +465,21 @@ section h1 {
     padding: 2%;
 }
 
+
 .image-carousel-container {
+    display: flex;
     width: 100%;
     height: auto;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .image-carousel-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+    scroll-snap-align: start;
 }
 
 .design-container h3 {
@@ -485,8 +490,6 @@ section h1 {
     border-left: none;
     margin-right: 50%;
 }
-
-
 
 /* End slide */
 
