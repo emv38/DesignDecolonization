@@ -70,11 +70,17 @@ body p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     color: black;
+    padding: 5%;
 }
 
 .resources-content a {
     text-decoration: underline;
     color: #460b2f;
+    transition: all .5s;
+}
+
+.resources-content a:hover {
+    color: #a2427d;
 }
 
 

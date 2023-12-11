@@ -34,6 +34,34 @@ body::after {
     z-index: -1;
   }
 
+.background-image-left {
+    position: absolute;
+    left: -25%;
+    top: 70%;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 30%;
+}
+
+.background-image-left img {
+    width: 700px;
+    height: auto;
+}
+
+.background-image-right {
+    position: absolute;
+    right: -25%;
+    top: 150%;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 30%;
+}
+
+.background-image-right img {
+    width: 700px;
+    height: auto;
+}
+
 header {
     position: sticky;
     top:0 ;
@@ -201,6 +229,7 @@ section h1 {
     display: inline;
     padding: 2%;
     background-color: #460b2f;
+    opacity: 1;
 }
 
 .colonial-content {
@@ -454,7 +483,7 @@ section h1 {
 }
 
 .design-container.active {
-    transform: scale(1); /* Final scale to 100% */
+    transform: scale(1);
     opacity: 1;
 }
 
@@ -465,21 +494,24 @@ section h1 {
     padding: 2%;
 }
 
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 
 .image-carousel-container {
     display: flex;
     width: 100%;
     height: auto;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
 }
 
 .image-carousel-container img {
     width: 100%;
     height: auto;
+    /*
     object-fit: cover;
-    scroll-snap-align: start;
+    scroll-snap-align: start;*/
 }
 
 .design-container h3 {
